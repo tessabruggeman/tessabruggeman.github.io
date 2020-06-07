@@ -1,0 +1,375 @@
+/* Algemeen */
+
+body {
+  background-color: #FCF7F2;
+  font: 15px "Avenir";
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 650px; /* een rijen */
+  width: 90%;
+  margin: 50px auto;
+}
+
+#navigatie {
+  grid-column: 1;
+  grid-row: 1;
+  height: 620px;
+  padding: 15px;
+  background-color: #EDE5DE;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#info {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: white;
+  padding: 15px;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  width: 80%;
+  display: block;
+  padding: 5px 17px;
+  margin: 15px auto;
+  margin-bottom: 35px;
+}
+
+#icon {
+  width: 18%;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+#informatie {
+    width: 18%;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 120px;
+}
+
+.actief{
+  border: 1px solid black;
+  width: 115px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+#logo:hover:not(.actief) {
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  border: 1px solid black;
+  width: 115px;
+  border-radius: 5px;
+  padding-left: 50px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+nav li:hover:not(.active) {
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nonactive {
+  width: 115px;
+  padding-left: 50px;
+}
+
+.informatie {
+  width: 115px;
+  padding-left: 50px;
+  margin-top: 135px;
+}
+
+nav {
+  position: relative;
+}
+
+nav li {
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+
+nav li a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  width: 84%;
+}
+
+/* info pagina*/
+
+#vgvinfo {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 400px; /* een rijen */
+  margin: 80px auto;
+  width: 65%;
+}
+
+h1 {
+  font: 30px "Futura";
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#links img {
+  width: 80%;
+}
+
+/* Vormen van VGV pagina */
+
+#vgvinfo2 {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 200px; /* een rijen */
+  margin: 80px auto;
+  width: 85%;
+}
+
+#grid2 {
+  display: grid;
+  grid-template-columns: 1px 1fr; /* twee kolommen */
+  grid-template-rows: 75px 75px 75px 75px; /* vier rijen */
+  color: white;
+  margin-top: -100px;
+}
+
+#gebied1 {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#gebied2 {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 20px;
+}
+
+#gebied3 {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 20px;
+}
+
+#gebied4 {
+  grid-column: 3;
+  grid-row: 1;
+  padding: 20px;
+}
+
+#gebied5 {
+  grid-column: 4;
+  grid-row: 1;
+  padding: 20px;
+}
+
+button {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover > .rotate{
+  -webkit-animation: rotation 4s infinite linear;
+          animation: rotation 4s infinite linear;
+}
+
+img {
+  width: 90%;
+  margin-top: -10px;
+}
+
+/* Detail pagina */
+
+#vgvinfo3 {
+  display: grid;
+  grid-template-columns: 350px 1fr; /* twee kolommen */
+  grid-template-rows: 400px; /* een rijen */
+  margin: 80px auto;
+  width: 85%;
+}
+
+#rechts > button {
+  padding: 10px;
+  width: 30%;
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+#rechts > button:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Medicalisering pagina */
+
+#vgvinfo4 {
+  display: grid;
+  grid-template-columns: 600px; /* een kolommen */
+  grid-template-rows: 300px 200px; /* twee rijen */
+  margin: 90px auto;
+  width: 75%;
+}
+
+#vgvinfo4 > #boven > img {
+  width: 132%;
+}
+
+#vgvinfo4 > #onder {
+  width: 800px;
+  margin-top: 20px;
+}
+
+/* Hulp nodig pagina */
+
+#vgvinfo5 {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 100px; /* een rijen */
+  margin: 80px auto;
+  width: 85%;
+}
+
+#grid5 {
+  display: grid;
+  grid-template-columns: 1px 1fr; /* twee kolommen */
+  grid-template-rows: 100px; /* een rijen */
+}
+
+#grid5 > #gebied1 {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -80px;
+}
+
+#grid5 > #gebied1 > #gebied3 > button {
+  height: 200px;
+}
+
+#grid5 > #gebied1 > #gebied4 > button {
+  height: 200px;
+}
+
+#grid5 > #gebied1 > #gebied2 > button > img {
+  width: 71%;
+  margin-bottom: 10px;
+}
+
+#grid5 > #gebied1 > #gebied3 > button > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#grid5 > #gebied1 > #gebied4 > button > img {
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+/* Meer informatie pagina*/
+
+#links > button {
+  padding: 10px;
+  width: 80%;
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#links > button:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Gevolgen */
+
+#vgvinfo6 {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 100px; /* een rijen */
+  margin: 80px auto;
+  width: 85%;
+}
+
+#grid3 {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 900px; /* een rijen */
+  width: 90%;
+  margin: 50px auto;
+}
+
+#rechts > li {
+  margin-left: 25px;
+}
+
+span {
+  font-weight: bold;
+}
+
+#vgvinfo6 > #rechts > button {
+  padding: 5px;
+  width: 43%;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Redenen*/
+
+#grid4 {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* twee kolommen */
+  grid-template-rows: 1300px; /* een rijen */
+  width: 90%;
+  margin: 50px auto;
+}
+}
